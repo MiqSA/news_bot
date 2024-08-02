@@ -12,7 +12,7 @@ FORMAT = '%(asctime)s %(levelname)s %(name)s %(message)s'
 
 @dataclass
 class Log:
-    path: str = 'logs/'
+    path: str = 'output/logs/'
     file: str = 'news_bot.log'
     level: int = logging.INFO
 
