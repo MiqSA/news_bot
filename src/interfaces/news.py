@@ -1,0 +1,33 @@
+from typing import Any, Protocol
+
+
+class ScrapingNewsInterface(Protocol):
+    def check_money(self, text: str) -> None:
+        ...
+
+    def has_image(self, element):
+        ...
+
+    def download_image(self, url: str, filename: str) -> None:
+        ...
+
+    def search_phrase_on_page(self, search_phrase: str) -> None:
+        ...
+
+    def set_category_on_page(self, category_name: str) -> None:
+        ...
+
+    def set_sorted_filter(self, value_filter: str) -> None:
+        ...
+
+    def get_search_results(self, search_phrase) -> list[Any]:
+        ...
+    
+    def save_data(self, payload: list[dict[str, Any]], directory: str):        
+        ...
+
+    def main(self, variables: dict[str, Any]) -> None:
+        ...
+
+    def run(self, variables: dict[str, Any]) -> None:
+        ...

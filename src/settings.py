@@ -1,0 +1,6 @@
+DEFAULT_MIN_RETRY_VALUE_INT: int = 5
+GERERIC_MAX_SLEEP_TIME_SECONDS_INT: int = 2
+DEFAULT_URL: str = "https://apnews.com/"
+DEFAULT_SEARCH_PHRASE: str = "school"
+DEFAULT_CATEGORY_NAME: str = "Stories"
+DEFAULT_FILTER: str =  "3"
