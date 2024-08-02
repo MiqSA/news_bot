@@ -105,7 +105,7 @@ class APNewsScraper(CustomSelenium):
         url = variables.get("URL", DEFAULT_URL)
         search_phrase = variables.get("SEARCH_PHRASE", DEFAULT_SEARCH_PHRASE)
         category_name = variables.get("CATEGORY_NAME", DEFAULT_CATEGORY_NAME)
-        value_sorted_filter = variables.get("FILTER", DEFAULT_FILTER)    
+        value_sorted_filter = DEFAULT_FILTER
 
         self.driver.get(url)
         self.search_phrase_on_page(search_phrase)
